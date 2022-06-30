@@ -1,7 +1,5 @@
 {
-    "autoload": {
-        "psr-4": {
-            "MyApp\\": "./app"
-        }
+    "require": {
+      "silex/silex": "~1.1"
     }
-}
+  }

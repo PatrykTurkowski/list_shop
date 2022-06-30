@@ -1,0 +1,113 @@
+.container {
+    display: list-item;
+    /* establish flex container */
+    /* switched from default (flex-start, see below) */
+
+    height: 100%;
+    width: 100%;
+}
+
+table {
+    margin: auto;
+}
+
+.list {
+
+    width: 100%;
+
+}
+
+.form {
+    width: 100%;
+    text-align: center;
+}
+
+.list table tr td {
+    border-bottom: 2px solid #000;
+    height: 40px;
+
+
+}
+
+.list table tr td:nth-child(1) {
+    border-bottom: 2px solid #000;
+    height: 40px;
+    width: 25px;
+
+
+}
+
+.list table tr td:nth-child(2) {
+    border-bottom: 2px solid #000;
+    height: 40px;
+    width: 250px;
+
+
+}
+
+.list table tr td:nth-child(3) {
+    border-bottom: 2px solid #000;
+    height: 40px;
+    width: 30px;
+
+
+}
+
+.list table tr td:nth-child(4) {
+    /* border-bottom: 2px solid #000  ; */
+    height: 40px;
+    width: 30px;
+    text-align: center;
+
+
+}
+
+.list table tr td:nth-child(5) {
+    /* border-bottom: 2px solid #000  ; */
+    height: 40px;
+    width: 30px;
+    text-align: center;
+
+}
+
+.list table tr td:nth-child(4) input {
+    /* border-radius: 10px; */
+}
+
+@media (max-width: 500px) {
+
+    body,
+    html {
+        color: black;
+
+    }
+
+    .container {
+        display: list-item;
+        /* establish flex container */
+        /* switched from default (flex-start, see below) */
+
+        height: 100%;
+        width: 100%;
+    }
+
+    .list {
+        position: none;
+        top: 0%;
+        right: 0%;
+        display: list-item;
+        /* establish flex container */
+        /* switched from default (flex-start, see below) */
+
+        height: 100%;
+        width: 100%;
+    }
+
+    .list table {
+        /* establish flex container */
+        /* switched from default (flex-start, see below) */
+
+
+        width: 100%;
+    }
+}

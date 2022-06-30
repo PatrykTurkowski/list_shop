@@ -1,0 +1,170 @@
+.left-bar {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+
+
+}
+
+.left-bar:hover {}
+
+.right-bar {
+
+    width: 50%;
+
+
+
+}
+
+.right-bar:hover {}
+
+.create {
+
+    width: 100%;
+    height: 40%;
+    padding-top: 20%;
+    text-align: center;
+}
+
+.search {
+
+    width: 100%;
+    height: 40%;
+    text-align: center;
+}
+
+.form input {
+    background-color: gray;
+    height: 40px;
+    width: 70%;
+    opacity: 0.6;
+    border: none;
+    border-bottom: 2px solid #000000;
+    font-size: 25px;
+    background-color: #008cff00;
+
+}
+
+.form input:focus {
+    outline: none;
+    opacity: 1;
+    background-color: #008cff00;
+
+}
+
+input::placeholder {
+    font-size: 25px;
+    color: black;
+
+}
+
+.container {
+    display: flex;
+    /* establish flex container */
+    flex-direction: row;
+    /* default value; can be omitted */
+    flex-wrap: nowrap;
+    /* default value; can be omitted */
+    justify-content: space-between;
+    /* switched from default (flex-start, see below) */
+
+    height: 90%;
+
+}
+
+
+
+
+.cookie-container {
+    position: absolute;
+    display: flex;
+    /* establish flex container */
+    flex-direction: row;
+    /* default value; can be omitted */
+    flex-wrap: nowrap;
+    /* default value; can be omitted */
+    justify-content: space-between;
+    /* switched from default (flex-start, see below) */
+    height: 10%;
+    background: #2f3640;
+    color: #f5f6fa;
+    padding: 0 32px;
+    box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+
+    transition: 400ms;
+}
+
+.cookie-container.active {
+    bottom: 0;
+}
+
+.cookie-container a {
+    color: #f5f6fa;
+}
+
+.cookie-btn {
+    background: #e84118;
+    border: 0;
+    color: #f5f6fa;
+    padding: 12px 48px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.red-alert {
+    color: #e81818;
+}
+
+@media (max-width: 1000px) {
+
+    body,
+    html {
+        color: black;
+
+    }
+
+    .container {
+        display: list-item;
+        /* establish flex container */
+        /* switched from default (flex-start, see below) */
+
+        height: 100%;
+
+    }
+
+    .left-bar {
+
+
+        width: 100%;
+        height: 500px;
+        margin-bottom: 50px;
+    }
+
+    .left-bar:hover {}
+
+    .right-bar {
+
+        height: 1000px;
+        width: 100%;
+    }
+
+    .create {
+
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .search {
+        padding: 0;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+}
