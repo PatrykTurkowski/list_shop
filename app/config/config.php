@@ -9,9 +9,9 @@ define('DB_NAME', 'heroku_9bde77301ed98b7'); //Add your DB Name
 define('APPROOT', dirname(dirname(__FILE__)));
 
 //URLROOT (Dynamic links)
-define('URLROOT', 'http://localhost/list_shop/');
+define('URLROOT', 'https://immense-island-56164.herokuapp.com/list_shop/');
 //path to css
-define('CSS_PATH', 'http://localhost/list_shop/public/css/');
-define('FONTELLO_PATH', 'http://localhost/list_shop/public/icons/css/fontello.css');
+define('CSS_PATH', 'https://immense-island-56164.herokuapp.com/public/css/');
+define('FONTELLO_PATH', 'https://immense-island-56164.herokuapp.com/icons/css/fontello.css');
 //path to JS
-define('JS_PATH', 'http://localhost/list_shop/public/javascripts/');
+define('JS_PATH', 'https://immense-island-56164.herokuapp.com/javascripts/');
