@@ -1,9 +1,9 @@
 <?php
 //Database params
-define('DB_HOST', 'localhost'); //Add your db host
-define('DB_USER', 'root'); // Add your DB root
-define('DB_PASS', ''); //Add your DB pass
-define('DB_NAME', 'shop_list'); //Add your DB Name
+define('DB_HOST', 'us-cdbr-east-06.cleardb.net'); //Add your db host
+define('DB_USER', 'b2614d70475eed'); // Add your DB root
+define('DB_PASS', '6ce10ea2'); //Add your DB pass
+define('DB_NAME', 'heroku_9bde77301ed98b7'); //Add your DB Name
 
 //APPROOT
 define('APPROOT', dirname(dirname(__FILE__)));
