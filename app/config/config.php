@@ -9,9 +9,9 @@ define('DB_NAME', 'heroku_21850fb451f0f46'); //Add your DB Name
 define('APPROOT', dirname(dirname(__FILE__)));
 
 //URLROOT (Dynamic links)
-define('URLROOT', 'http://localhost/list_shop/');
+define('URLROOT', 'https://shoplistproduct.herokuapp.com/');
 //path to css
-define('CSS_PATH', 'http://localhost/list_shop/public/css/');
-define('FONTELLO_PATH', 'http://localhost/list_shop/public/icons/css/fontello.css');
+define('CSS_PATH', 'https://shoplistproduct.herokuapp.com/public/css/');
+define('FONTELLO_PATH', 'https://shoplistproduct.herokuapp.com/public/icons/css/fontello.css');
 //path to JS
-define('JS_PATH', 'http://localhost/list_shop/public/javascripts/');
+define('JS_PATH', 'https://shoplistproduct.herokuapp.com/public/javascripts/');
