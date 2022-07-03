@@ -122,6 +122,6 @@ require_once APPROOT . '/views/includes/head.php';
     </div>
 </div>
 <?php
-session_unset();
+// session_unset();
 
 ?>
