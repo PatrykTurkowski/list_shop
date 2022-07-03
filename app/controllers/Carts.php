@@ -40,7 +40,7 @@ class Carts extends Controller
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
             $countCarts = $this->cartModel->countCarts();
             if ($countCarts <= 10) {
-                if (!isToken()) {
+               
                     $this->cartModel->create($_POST['cartName']);
                     $token = $this->cartModel->token;
                     $name = $_POST['cartName'];
@@ -50,9 +50,6 @@ class Carts extends Controller
                         'token' => $token,
                         'name' => $name
                     ]);
-                } else {
-                    $this->show();
-                }
             } else {
                 $_SESSION['countCarts'] = 'You already have the maximum number of baskets';
                 $this->show();
@@ -67,6 +64,7 @@ class Carts extends Controller
      */
     public function findCart()
     {
+        $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
         $token = $_POST['token'];
 
         if ($this->cartModel->isCart($token)) {
