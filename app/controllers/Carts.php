@@ -147,7 +147,8 @@ class Carts extends Controller
      */
     public function showSingleType()
     {
-        if ($_SERVER['REQUEST_METHOD'] == 'POST' and isToken()) {
+        //////////////////////////////////////////////////////////////////////////////////////////////and isToken()
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $products = $this->cartModel->productListType($_POST['type']);
             $this->view('/cart/products', [
                 'title' => 'Category of products',
@@ -168,7 +169,8 @@ class Carts extends Controller
      */
     public function addProduct()
     {
-        if ($_SERVER['REQUEST_METHOD'] == 'POST' and isToken()) {
+        //////////////////////////////////////////////////////////////////////////////////////////////and isToken()
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
             if (!$this->cartModel->isProductInCart($_SESSION['token'], $_POST['product'])) {
