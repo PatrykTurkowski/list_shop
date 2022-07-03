@@ -25,7 +25,8 @@ class DbUserToken extends Database implements DbUserTokenInterface
             setcookie('id', $token, time() + (86400 * 720), "/");
 
 
-            $query = "INSERT INTO users VALUES(NULL, :token)";
+            $query = "INSERT INTO users (`token`)
+                      VALUES(:token)";
             $this->query($query);
             $this->bind(':token', $token);
             $this->execute();
