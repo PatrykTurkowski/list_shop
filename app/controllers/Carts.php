@@ -125,7 +125,8 @@ class Carts extends Controller
      */
     public function showTypes()
     {
-        if ($_SERVER['REQUEST_METHOD'] == 'POST' and isToken()) {
+           //////////////////////////////////////////////////////////////////////////////////////////////$_SERVER['REQUEST_METHOD'] == 'POST' and 
+        if (isToken()) {
             $types = $this->cartModel->showTypes();
             $this->view('/cart/types', [
                 'title' => 'Category',
