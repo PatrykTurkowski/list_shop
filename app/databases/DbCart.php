@@ -59,8 +59,8 @@ class DbCart extends Database implements DbCartInterface
     function createCart(string $cartName): string
     {
         $token = sha1(uniqid('php_', true));
-        $query = "INSERT INTO cart_name (`id`, `name`, `token`, `users_id`)
-                VALUES (NULL, :cartName, :token,(SELECT id FROM users WHERE token = :users_id))";
+        $query = "INSERT INTO cart_name (`name`, `token`, `users_id`)
+                VALUES (:cartName, :token,(SELECT id FROM users WHERE token = :users_id))";
         $this->query($query);
         $this->bind(':token', $token);
         $this->bind(':cartName', $cartName);
