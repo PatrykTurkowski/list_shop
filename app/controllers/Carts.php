@@ -126,7 +126,7 @@ class Carts extends Controller
     public function showTypes()
     {
            //////////////////////////////////////////////////////////////////////////////////////////////$_SERVER['REQUEST_METHOD'] == 'POST' and 
-        if (isToken()) {
+        // if (isToken()) {
             $types = $this->cartModel->showTypes();
             $this->view('/cart/types', [
                 'title' => 'Category',
@@ -134,9 +134,9 @@ class Carts extends Controller
                 'name' => $_SESSION['cartName'],
                 'types' => $types
             ]);
-        } else {
-            header('location:' . URLROOT . 'home/index/');
-        }
+        // } else {
+        //     header('location:' . URLROOT . 'home/index/');
+        // }
     }
 
     /**
