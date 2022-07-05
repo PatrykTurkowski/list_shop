@@ -65,7 +65,7 @@ require_once APPROOT . '/views/includes/head.php';
                         echo '</td>';
 
                         echo '<td>';
-                        echo '<button type="submit" name=nameProduct value=' . $product['Product'] . '>';
+                        echo '<button type="submit" name=nameProduct value=' . $product['id'] . '>';
                         echo '<i class = "icon-trash-empty"></i>';
                         echo '</button>';
                         echo '</td>';

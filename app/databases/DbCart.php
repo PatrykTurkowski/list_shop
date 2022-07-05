@@ -22,6 +22,7 @@ class DbCart extends Database implements DbCartInterface
     {
         $query = "SELECT 
                     DISTINCT
+                    p.id AS 'id',
                     cn.name AS 'NameCart',
                     p.name AS 'Product', 
                     pt.name AS 'Category'
@@ -88,11 +89,16 @@ class DbCart extends Database implements DbCartInterface
         header('location:' . URLROOT . 'home/index/');
     }
 
-    function deleteProductFromCart(string $token, string $name): void
+    function deleteProductFromCart(string $token, string $id): void
     {
-        $query = "DELETE FROM cart WHERE product_id = (SELECT id FROM product WHERE name = :name) AND cart_name_id = (SELECT id FROM cart_name WHERE token = :token)";
+        // $query = "DELETE FROM cart 
+        //           WHERE product_id = (SELECT id FROM product WHERE name = :name) 
+        //           AND cart_name_id = (SELECT id FROM cart_name WHERE token = :token)";
+        $query = "DELETE FROM cart 
+                  WHERE product_id = :id
+                  AND cart_name_id = (SELECT id FROM cart_name WHERE token = :token);";
         $this->query($query);
-        $this->bind(':name', $name);
+        $this->bind(':id', $id);
         $this->bind(':token', $token);
         $this->execute();
     }
