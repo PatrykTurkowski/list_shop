@@ -29,7 +29,7 @@
  I am text to the right  -->
 <!--   ![Flowers](/source/example-of-view.png)    -->
   
-  <img src="/source/example-of-view.png" align="left" width="300px"/>
+  
   
  
 >   - The website has been designed so that everyone, regardless of their skills, can use it intuitively and with pleasure.
