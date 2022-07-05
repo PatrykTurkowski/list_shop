@@ -1,2 +1,0 @@
-wybierz kategorie produktu 
-submit
